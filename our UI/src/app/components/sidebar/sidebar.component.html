@@ -1,0 +1,54 @@
+<div class="logo">
+  <a href="https://csmoodle.ucd.ie/moodle/login/index.php" class="simple-text logo-mini">
+    <div class="logo-img">
+      <img src="./assets/img/ucd.png" />
+    </div>
+  </a>
+  <a href="https://csmoodle.ucd.ie/moodle/login/index.php" class="simple-text logo-normal">
+    Distributed System <br>
+    <h6>powered by Camals</h6>
+  </a>
+</div>
+<div class="sidebar-wrapper">
+  <div class=" card">
+    
+    
+      
+    <table class=" table tablesorter" id="items">
+      <thead class=" text-primary">
+        <tr>
+          
+
+          <th *ngFor="let s of temp" class = "temp" >
+            {{[s]}}
+          </th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        
+        
+        
+        
+      </tbody>
+    </table>
+    
+</div>
+  <ul class="nav">
+    <li
+      routerLinkActive="active"
+      *ngFor="let menuItem of menuItems"
+      class="{{ menuItem.class }} nav-item"
+    >
+      <a [routerLink]="[menuItem.path]">
+        <i class="tim-icons  {{ menuItem.icon }}"></i>
+        <p>{{ menuItem.title }}</p>
+      </a>
+      
+    </li>
+
+  </ul>
+  
+  
+  
+</div>

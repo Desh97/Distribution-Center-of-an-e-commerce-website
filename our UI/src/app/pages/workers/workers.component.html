@@ -1,0 +1,39 @@
+
+<div class=" content">
+  <div class=" row">
+    <div class=" col-lg-12">
+      <div class=" card">
+        <div class=" card-header">
+          <h4 class=" card-title">Workers Table</h4>
+        </div>
+        <div class=" card-body">
+          <div class=" table-responsive">
+            <table class=" table tablesorter" id="workers">
+              <thead class=" text-primary">
+                <tr>
+                  
+                  <th *ngFor="let col of columns">
+                    {{col}}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                
+              <tr *ngFor="let worker of workersArray">
+                <td>{{worker.name}}</td>
+                <td>{{worker.location}}</td>  
+                <td>{{worker.capacity}}</td>  
+                <td>{{worker.weight}}</td>
+                <td>  {{this.objToString(worker.holdingItems[0])}} </td>                      
+                
+                <td>  {{this.objToString(worker.actionHistory[worker.actionHistory.length-1])}}      </td>
+              </tr>
+               </tbody> 
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>

@@ -1,0 +1,17 @@
+{
+    
+    "workers" : [
+        {
+            "name" : "rem",
+            "location" : "a1.1",
+            "capacity" : 20
+        },
+        {
+            "name" : "tahar",
+            "location" : "a1.2",
+            "capacity" : 20
+        }
+        
+    ]
+    
+}

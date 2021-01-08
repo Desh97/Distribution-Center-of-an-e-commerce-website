@@ -1,0 +1,52 @@
+<div class="wrapper">
+  <div class="sidebar"><app-sidebar></app-sidebar></div>
+  <div class="main-panel">
+    <app-navbar></app-navbar>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </div>
+</div>
+
+<div class="fixed-plugin " >
+  <div class=" show-dropdown" ngbDropdown>
+    <a data-toggle="dropdown" ngbDropdownToggle>
+      <i class=" fa fa-shopping-cart" style="font-size:24px"> </i>
+    </a>
+      <ul ngbDropdownMenu>    
+                    
+              <div class=" card">
+                <div class=" card-header">
+                  <h4 class=" card-title">Item Table</h4>
+                </div>
+                <div class=" card-body">
+                  <div class=" table-responsive">
+                    <table class=" table tablesorter" id="items">
+                      <thead class=" text-primary">
+                        <tr>
+                          
+
+                          <th *ngFor="let col of columns">
+                            {{col}}
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let item of items">
+                          <td *ngFor="let col of index">{{item[col]}}</td>
+                          
+                        </tr>
+                        
+                        
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+
+      </ul>
+  </div>
+</div>
